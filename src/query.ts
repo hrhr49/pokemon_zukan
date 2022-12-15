@@ -67,10 +67,7 @@ const gqlPokemonToPokemon = (gqlResult: any): Pokemon | null => {
   const stats = p.pokemon_v2_pokemonstats;
   const imageUrl = JSON.parse(p.pokemon_v2_pokemonsprites?.[0]?.sprites)?.other?.['official-artwork']?.['front_default'];
 
-  console.log({imageUrl});
-  console.log(stats);
   const statsMap = new Map<string, number>(stats.map(({pokemon_v2_stat: {name}, base_stat}: any) => [name, base_stat]));
-  console.log(statsMap);
   return {
     id: p?.id,
     name: p?.pokemon_v2_pokemonspecy?.pokemon_v2_pokemonspeciesnames[0]?.name,

@@ -23,10 +23,7 @@ const App: React.FC = () => {
 
   const searchPokemon = (e: any) => {
     if (e)e.preventDefault();
-    console.log('called');
     const newPokemonName = inputRef.current?.value;
-    console.log(newPokemonName)
-    console.log(inputRef  )
     if (newPokemonName) {
       setPokemonName(newPokemonName);
     }
