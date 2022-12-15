@@ -1,3 +1,14 @@
+# 概要
+PokeAPIを使ったポケモン図鑑の実装
+
+## 使用したもの
+
+* PokeAPI
+* React
+* TypeScript
+* GraphQL
+* ApolloClient
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
